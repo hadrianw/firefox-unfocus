@@ -7,11 +7,11 @@
   <RDF:Description RDF:about="rdf:#$a.ya4"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.0"
-                   em:maxVersion="3.6.*" />
+                   em:maxVersion="7.0.*" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="{c82bcf0e-ebff-486f-bc3e-58ab0ba5286a}"
                    em:name="Unfocus"
-                   em:version="0.8"
+                   em:version="1"
                    em:creator="Hadrian Węgrzynowski"
                    em:description="Gives back focus to the browser"
                    em:iconURL="chrome://unfocus/content/icon.png">

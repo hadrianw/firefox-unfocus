@@ -1,1 +1,4 @@
 content unfocus	chrome/
+component {c82bcf0e-ebff-486f-bc3e-58ab0ba5286a} components/cliarg.js
+contract @mozilla.org/commandlinehandler/general-startup;1?type=unfocus {c82bcf0e-ebff-486f-bc3e-58ab0ba5286a}
+category command-line-handler m-unfocus @mozilla.org/commandlinehandler/general-startup;1?type=unfocus
