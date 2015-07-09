@@ -1,0 +1,31 @@
+Firefox Unfocus
+---------------
+
+Gives back focus to the browser. Provides command line switch to unfocus plugins and subframes. You can bind a keystroke to it.
+
+It worked up to version 3.6 of Firefox.
+
+It simple focuses browser window instead of plugin's (imagine Flash or Java). It is a workaround for Mozilla bugs: 78414 ((PluginShortcuts) Application shortcut keys (keyboard commands such as f11, ctrl+t, ctrl+r) fail to operate when plug-in (flash, acrobat, quicktime) has focus and 93149 (No way to move focus between plugin and browser from keyboard).
+
+NOTE:
+It is crossplatform. It does _not_ need AutoHotkey. It does work on Linux. I am Linux user myself.
+There is no other way than binding key with external application like autohotkey or window manager, because plugin has full keyboard focus. If plugin has keyboard focus, Firefox does not receive keyboard events at all.
+If you want to bind a keystroke inside Firefox you must know that it is impossible with standard methods - you are doomed to failure. You would have to use system specific methods of keystate checking - it's like implementing autohotkey inside firefox.
+
+Usage:
+Just as your platform allows you, bind a keystroke to:
+On *nix:
+
+    firefox -unfocus
+
+If you use metacity (default WM of gnome): gconf-editor -> / -> apps -> metacity -> global_keybindings and keybinding_commands
+If you use kwin (kde): System Settings -> Keyboard and Mouse -> Keyboard Shortcuts
+If you use xfwm (xfce): Keyboard Settings -> Shortcuts
+If you use openbox (lxde): http://urukrama.wordpress.com/openbox-guide/#Key_mouse
+I don't use these WMs, instructions based on what I could find.
+On Windows:
+
+    PATH_TO_FIREFOX\firefox.exe -unfocus
+
+You can use AutoHotkey - http://www.autohotkey.com/
+Windows Vista (and probably above) - create quick launch shortcut - Win + number_of_icon (first icon is Win+1, second Win+2 etc.)
